@@ -1,0 +1,25 @@
+Visual Studio C++ Rastgele Sayı Üretip Bilme
+int main ()
+
+int kullanici,rastgele;
+cout<<"tuttugum sayiyi bul"<<endl;
+cin>>kullanici;
+srand(time(NULL));
+rastgele = rand() % 10 + 1;
+
+	if (kullanici<=10 && kullanici >=1)
+	{
+		if(rastgele==kullanici)
+		{
+		cout<<"Tebrikler";
+		}
+		else
+		{
+		cout<<"Tekrar Dene";
+		cout<<"Tuttugum sayi: "<< rastgele<<endl;
+		}
+	}
+	else
+	{
+	cout<<"Lutfen 1-10 arasi sayi giriniz";
+	}
